@@ -1,7 +1,9 @@
 // Specific CSS for your home-page
+body {background-color:#E5DEDE;}
 a {
+  color: #4A4A4A;
   text-decoration: none;
-  text-shadow: 1px 1px .8px #000000;
+  // text-shadow: 1px 1px .8px #000000;
 }
 
 h1 {
@@ -11,7 +13,11 @@ h1 {
 
 p {
   font-family: $serif-font;
-  text-shadow: 1px 1px 1px #000000;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+h3 {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
 }
 // CONTAINER
 
@@ -43,10 +49,17 @@ p {
   }
 }
 
+// FLEX
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 // BUTTON
 
 .btn-ghost {
-  color: #ebdede;
+  color: #4A4A4A;
   border: 1px solid #4A4A4A;
   padding: 8px 24px;
   border-radius: 50px;
@@ -59,18 +72,32 @@ p {
   opacity: 1;
 }
 
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #B88194;
+}
+
+.btn-flat:hover {
+  transition: ease .3s;
+  background: #3490A7;
+  color: white;
+}
 // BANNER
 
 .banner {
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   padding: 150px 0;
 }
 
 .banner h1 {
   margin: 0;
   color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  // text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px #000000;
   font-size: 32px;
   font-weight: bold;
 }
@@ -82,13 +109,20 @@ p {
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 }
 
-// CARDS
+// GRID
 
-.cards {
+.grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
+
+.center {
+  display: grid;
+  place-items: center
+}
+
+// CARD
 
 .card-category {
   background-size: cover;
@@ -143,7 +177,7 @@ p {
 // LINKBAR
 
 .linkbar {
-  background: #F4F4F4;
+  background: #ABAAA9;
   display: flex;
   align-items: center;
   justify-content: space-between;
