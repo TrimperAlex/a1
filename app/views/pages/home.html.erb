@@ -1,65 +1,31 @@
-<div class="main">
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1581985673473-0784a7a44e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);">
-  <div class="container">
-    <h1>Build your <strong>Dream Website</strong> with <strong>Me</strong>!</h1>
-    <p>Online stores | Portfolios | Blogs </p>
-    <%= link_to "Contact", "#", class: "btn-flat" %>
-
-  </div>
-</div>
+<%= render 'shared/banner' %>
 
 <br>
 
-<div class="center container-inside">
+<%# CARDS %>
 
-</div>
-<%# CARD COMPONENT %>
-
-    <%# Ecommerce %>
-
-<div class="grid">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1581985673473-0784a7a44e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)">
-    <div class="container-inside">
-      <p>Start selling online or improve your current store. Grow your business</p>
+<div class="container grid">
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1599658880436-c61792e70672?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+    <div class="card-content">
+      <h2 class="card-title">Ecommerce</h2>
+      <p class="card-body">Start selling online or improve your current store. Just want something simple and small? No problem! Shopify help is also available.</p>
+      <a href="" class="btn-flat">learn more</a>
     </div>
   </div>
-
-    <%# Portfolio %>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1581985673473-0784a7a44e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)">
-    <div class="container-inside">
-      <p>In need of a portfolio? Showcase your work with a custom gallery</p>
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1597274303632-880ef8660375?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)">
+    <div class="card-content">
+      <h2 class="card-title">Portfolio</h2>
+      <p class="card-body">Showcase your work with a custom gallery. Manage your own content and connect with new clients or potential employers.</p>
+      <a href="" class="btn-flat">learn more</a>
     </div>
   </div>
-
-    <%# Blog %>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1581985673473-0784a7a44e39?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80)">
-    <div class="container-inside">
-      <p>Write your story and share it with the world. Simple platform</p>
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1455390582262-044cdead277a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80)">
+    <div class="card-content">
+      <h2 class="card-title">Custom Blog</h2>
+      <p class="card-body">Write your story and share it with the world. Easy to use platform, no ads, no nonsense.</p>
+      <a href="" class="btn-flat">learn more</a>
     </div>
   </div>
 </div>
 
 <br>
-</div>
-<%# LINKBAR %>
-
-<div class="linkbar">
-  <div class="linkbar-links">
-    <a href="https://github.com/TrimperAlex"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/trimperalex/"><i class="fab fa-linkedin"></i></a>
-    <%# <a href="#"><i class="fab fa-instagram"></i></a> %>
-    <%# <a href="#"><i class="fab fa-facebook"></i></a> %>
-    <%# <a href="#"><i class="fab fa-twitter"></i></a> %>
-  </div>
-  <div class="container">
-    <%= link_to "Send me an E-mail", "#", class: "btn-ghost" %>
-  </div>
-  <div class="container">
-    <%= link_to "Check out my Projects", "#", class: "btn-ghost" %>
-  </div>
-  <div class="container">
-    <%= link_to "I have music too", "#", class: "btn-ghost" %>
-  </div>
-</div>
