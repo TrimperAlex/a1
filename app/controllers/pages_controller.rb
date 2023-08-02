@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def music
   end
+
+  def build
+  end
+
 end

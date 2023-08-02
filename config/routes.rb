@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'pages/ecommerce'
   get 'pages/portfolio'
   get 'pages/blog'
+  get 'pages/build'
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
